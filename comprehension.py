@@ -1,4 +1,4 @@
-import random  # import the random modul to use its functions e.g. randint to be able to generate random numbers in the code 
+import random  # import the random modul 
 
 guessesTaken = 0  # assign 0 to guesesTaken variable
 
@@ -11,7 +11,7 @@ print('Well, ' + myName + ', I am thinking of a number between 1 and 20.') # pri
 while guessesTaken < 6:  # this while loop runs until the condition guessesTaken < 6 is true, it it is false, the loop ends
     print('Take a guess.')  # prints to console till guessesTaken < 6
     guess = input()  # assigns user input to variable guess
-    guess = int(guess)  # changes variable type guess to integer
+    guess = int(guess)  # cast variable type guess to integer
 
     guessesTaken += 1   # adds 1 to variable guessesTaken each time the condition is true
 
@@ -29,5 +29,5 @@ if guess == number:  # if statement 'variable guess equals to variable number' i
     print('Good job, ' + myName + '! You guessed my number in ' + guessesTaken + ' guesses!')  # outputs the text in between the brackets and the user input assigned to variable myName
 
 if guess != number:  # if statement 'guess is not equal to number' is true, then
-    number = str(number)  # changes variable type number to string
+    number = str(number)  # cast variable type number to string
     print('Nope. The number I was thinking of was ' + number)  # prints the text and the string value of number variable to the console
